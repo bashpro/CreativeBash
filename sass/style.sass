@@ -22,12 +22,21 @@ body::-webkit-scrollbar-thumb
 .hide
   display: none!important 
 
+//varibles
+
+$flex-ms: 2
+
 // build css
 
 .body
   width: 100vw
   height: 100vh
   display: flex
+
+.hide-menu
+  flex: 0!important
+  width: 0px!important
+  transition: all 0.5s ease
   
 .left
   flex: 1
@@ -35,16 +44,60 @@ body::-webkit-scrollbar-thumb
   transition: all 0.5s ease
 
 .left.active
-  flex: 3
+  flex: $flex-ms
   transition: all 0.5s ease
+  .menu
+    border-right: 2px solid rgba(255,255,255, 0.3)
+    width: 140px
+    transition: all 0.5s ease
+    
+.menu
+  width: 40px
+  display: flex
+  height: 100vh
+  border-right: 2px solid rgba(255,255,255, 0.1)
+  transition: all 0.5s ease
+  justify-items: center
+  align-items: center
+  
+.m-holder
+  height: 120px
+  width: 100%
+  display: flex
+  flex-direction: column
+  
+.m-button
+  height: 40px
+  background-color: silver
+  flex: 1
+  width: 100%
+  transition: 0.2s all ease
+  &:hover 
+    transition: 0.2s all ease
+    background-color: white
   
 .middle
   flex: 3
   transition: all 0.5s ease
+  display: flex
 
 .middle.add
   flex: 1
   transition: all 0.5s ease
+  
+.mid-holder
+  flex: 1
+  margin: 10% 0% 10% 0
+  display: flex
+  flex-direction: column
+  
+.logo
+  background-color: silver
+  flex: 1
+  
+.showreel
+  background-color: #656565
+  flex: 3
   
 .right
   flex: 1
@@ -52,7 +105,7 @@ body::-webkit-scrollbar-thumb
   transition: all 0.5s ease
   
 .right.active
-  flex: 3
+  flex: $flex-ms
   transition: all 0.5s ease
 
 
