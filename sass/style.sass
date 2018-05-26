@@ -46,8 +46,8 @@ $flex-ms: 2
 .left.active
   flex: $flex-ms
   transition: all 0.5s ease
-  .menu
-    border-right: 2px solid rgba(255,255,255, 0.3)
+  .menu:hover
+    border-right: 2px solid rgba(255,255,255, 0.4)
     width: 140px
     transition: all 0.5s ease
     
@@ -80,10 +80,15 @@ $flex-ms: 2
   flex: 3
   transition: all 0.5s ease
   display: flex
-
+  background: #1b1b1b
+  
 .middle.add
   flex: 1
   transition: all 0.5s ease
+  .logo img
+    width: 100px
+    transition: all 0.4s ease
+
   
 .mid-holder
   flex: 1
@@ -92,13 +97,17 @@ $flex-ms: 2
   flex-direction: column
   
 .logo
-  background-color: silver
   flex: 1
+  display: flex
+  img 
+    width: 125px
+    margin: auto
+    transition: all 0.4s ease
+
   
 .showreel
-  background-color: #656565
   flex: 3
-  
+
 .right
   flex: 1
   background-color: grey
