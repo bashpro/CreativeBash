@@ -1,7 +1,7 @@
 // main css functions
 html
   overflow-x: hidden
-  font-family: arial
+  font-family: AileronLight, arial
   margin: 0px
   body, p, a
     margin: 0px
@@ -28,10 +28,51 @@ $flex-ms: 2
 
 // build css
 
-.body
+.preview
+  display: flex
+  width: 100%
+  height: 
+  .p-nav
+
+    .logo img
+      margin: 40px auto
+      width: 144px
+      height: 128px 
+  .p-left
+    width: 350px
+    background-color: #1b1b1b
+    
+  .p-info
+    display: flex
+    width: 100%
+    .p-line
+      width: 2px
+      margin: 0px 20px
+      margin-left: 30px 
+      background-color: white
+    .p-text p
+      color: rgba(255,255,255,0.75)
+      margin: 0px 25px 0px 0px
+      font-size: 15px
+      font-family: AileronUltraLight
+      letter-spacing: 1px
+      &:first-child
+        font-size: 20px
+        margin-bottom: 14px
+      
+        
+  .p-button
+    width: 20px
+    height: 20px
+    background-color: red
+  
+
+
+
+.content-holder
   width: 100vw
   height: 100vh
-  display: flex
+  display: flex 
 
 .hide-menu
   flex: 0!important
