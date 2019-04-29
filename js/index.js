@@ -23,17 +23,13 @@ $( document ).ready(function() {
     var picked = $(this).attr('data-ms');
     var withid = $("#" + picked);
 
-    /*if (withid.is("#01") && $("#01").hasClass("active")) {
-      $("#01").removeClass("active")
-    }else {
+    withid.toggleClass("active");
+
+    if ($('#01, #02').hasClass("active")) {
+      $(".menus").removeClass("active")
       withid.addClass("active");
-    };*/
-
-    withid.addClass("active");
-
-    if (withid.hasClass("active")) {
-      
     }
+
 
   });
 
