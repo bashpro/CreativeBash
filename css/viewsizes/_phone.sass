@@ -1,0 +1,65 @@
+//main: ../main.sass
+@media screen and (max-width: $phone)
+  //topmenu section
+  .mainmenu
+    height: calc($phone-menu - 20px)!important
+    transition: $transistion
+    .menubtn
+      width: calc($phone-menu - 20px)
+      transition: $transistion
+      height: calc($phone-menu - 20px)
+      display: flex
+    .btn img
+      width: calc($phone-btn - 20px)
+      height: calc($phone-btn - 20px)
+      transition: $transistion
+
+  //main section
+  .mainimage
+    height: 179px!important
+    img
+      height: 179px!important
+      width: 234px!important
+
+  .maininfo
+    .textbox
+      p
+        font-size: 26px!important
+
+  .textbox
+    margin: auto
+    .fixedwidthbox
+      width: 420px!important
+      height: 70px!important
+      a.socialbtn
+          background-size: 70px 420px!important
+          &:nth-child(2)
+            background-position: 0px 350px!important
+          &:nth-child(3)
+            background-position: 0px 280px!important
+          &:nth-child(4)
+            background-position: 0px 210px!important
+          &:nth-child(5)
+            background-position: 0px 140px!important
+          &:nth-child(6)
+            background-position: 0px 70px!important
+
+@media screen and (max-width: 419px)
+  .textbox
+    .fixedwidthbox
+      width: 320px!important
+      height: 53px!important
+      a.socialbtn
+        background-size: 53px 320px!important
+        &:nth-child(2)
+          background-position: 0px 267px!important
+        &:nth-child(3)
+          background-position: 0px 214px!important
+        &:nth-child(4)
+          background-position: 0px 161px!important
+        &:nth-child(5)
+          background-position: 0px 108px!important
+        &:nth-child(6)
+          background-position: 0px 55px!important
+
+@import "menusphone"

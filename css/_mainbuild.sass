@@ -1,0 +1,29 @@
+//main:main.sass
+// main css functions
+html
+  overflow-x: hidden
+  font-family: aileron
+  margin: 0px
+  body, p, a, h1, h2, h3, h4, h5, h6
+    margin: 0px
+    text-decoration: none
+    color: $text-colour
+  body
+    background-color: $background
+    display: flex
+    overflow-x: hidden
+
+
+body::-webkit-scrollbar-track
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+  background-color: #F5F5F5
+
+body::-webkit-scrollbar
+  width: 6px
+  background-color: #F5F5F5
+
+body::-webkit-scrollbar-thumb
+  background-color: #a7a7a7
+
+.hide
+  display: none!important

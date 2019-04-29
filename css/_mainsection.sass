@@ -1,0 +1,82 @@
+//main: main.sass
+
+@keyframes logo
+  0%
+    opacity: 0
+    margin-top: -80px
+  100%
+    opacity: 1
+    margin-top: 0px
+
+@keyframes social
+  0%
+    opacity: 0
+    margin-top: 80px
+  100%
+    opacity: 1
+    margin-top: 0px
+
+.mainholder
+  overflow: hidden
+  display: flex
+  flex-direction: column
+  width: 100%
+  justify-content: center
+
+.mainimage
+  height: 224px
+  margin: 20px 0px 20px 0px
+  align-items: center
+  justify-content: center
+  img
+    width: 292px
+    height: 224px
+    animation: 1.2s ease logo
+
+.maininfo
+  text-align: center
+  display: flex
+  .textbox
+    margin: auto
+    width: calc(100% - 100px)
+    animation-delay: 2s
+    animation: 1.2s ease logo
+    height: 60px
+    margin: 33px auto 33px auto
+    p
+      color: $text-colour
+      font-size: 28px
+      user-select: none
+
+
+.mainsocials
+  height: 120px
+  .textbox
+    margin: auto
+    .fixedwidthbox
+      display: flex
+      width: 360px
+      height: 60px
+      animation: 1.2s ease social
+
+      a.socialbtn
+        flex: 1
+        background-image: url('../images/socials.png')
+        background-size: 60px 360px
+        &:nth-child(2)
+          background-position: 0px 300px
+        &:nth-child(3)
+          background-position: 0px 240px
+        &:nth-child(4)
+          background-position: 0px 180px
+        &:nth-child(5)
+          background-position: 0px 120px
+        &:nth-child(6)
+          background-position: 0px 60px
+.footer
+  .textbox
+      text-align: center
+      height: 20px
+      width: calc(100% - 100px)
+      margin: auto
+      font-size: 18px

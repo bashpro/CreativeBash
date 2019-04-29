@@ -1,0 +1,31 @@
+//main:main.sass
+
+.menuholder
+  position: fixed
+  display: flex
+  width: 100%
+  z-index: 10
+
+.mainmenu
+  height: $main-menu
+  transition: $transistion
+  width: 100%
+
+.menubtn
+  width: $main-menu
+  transition: $transistion
+  display: flex
+  &:hover
+    background-color: white
+  &[data-btn= "left"]
+    border-right: solid 2px $accent-color
+  &[data-btn= "right"]
+    border-left: solid 2px $accent-color
+
+.btn img
+  width: $btn-size
+  height: $btn-size
+  padding: 10px
+  transition: $transistion
+  &:hover
+    filter: invert(1)
