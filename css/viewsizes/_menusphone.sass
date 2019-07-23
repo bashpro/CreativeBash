@@ -1,6 +1,21 @@
 //main: ../main.sass
+.menus.mobile
+  width: 0%
+  height: 100%!important
 
 .menus.mobile.active
+  transition: $transistion
+
+.menus.mobile.left
+  left: 0%
   position: fixed!important
+
+.menus.mobile.right
+  right: 0%
+  position: fixed!important
+
+.menus.mobile.left.active
   width: 100%!important
-  height: 100%
+
+.menus.mobile.right.active
+  width: 100%!important
