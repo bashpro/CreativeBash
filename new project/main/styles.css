@@ -1,0 +1,186 @@
+/*
+  Build project
+  Author: Bash
+  version: 0.0.1 */
+/*main preset for core build */
+html {
+  overflow-x: hidden;
+  font-family: 'AileronLight', 'arial';
+  font-weight: 100;
+  font-style: normal;
+  margin: 0px;
+}
+
+body, p, a, h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: normal;
+  user-select: none;
+  width: auto;
+  cursor: default;
+}
+
+.text-is-xs {
+  font-size: 12px;
+}
+
+.text-is-s {
+  font-size: 14px;
+}
+
+.text-is-l {
+  font-size: 20px;
+}
+
+.text-is-xl {
+  font-size: 26px;
+}
+
+.text-is-xl1 {
+  font-size: 35px;
+}
+
+.text-is-xl2 {
+  font-size: 48px;
+}
+
+.text-is-xl3 {
+  font-size: 64px;
+}
+
+/*simple layout logic */
+section {
+  display: flex;
+  width: 100%;
+  min-height: 50px;
+  flex-wrap: wrap;
+}
+
+.is-row {
+  flex-direction: column;
+}
+
+.is-column {
+  flex-direction: row;
+}
+
+.is-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.is-v-center {
+  justify-content: center;
+}
+
+.is-h-center {
+  align-items: center;
+}
+
+.box {
+  flex: 1;
+  display: flex;
+  min-height: 77px;
+}
+
+.box-min-w .box {
+  min-width: 300px;
+}
+
+.section-has-1 .box {
+  flex-basis: 100%;
+}
+
+.box-is-f1 {
+  flex-basis: 100% !important;
+}
+
+.section-has-2 .box {
+  flex-basis: 50%;
+}
+
+.box-is-f2 {
+  flex-basis: 50% !important;
+}
+
+.section-has-3 .box {
+  flex-basis: 33%;
+}
+
+.box-is-f3 {
+  flex-basis: 33% !important;
+}
+
+.section-has-4 .box {
+  flex-basis: 25%;
+}
+
+.box-is-f4 {
+  flex-basis: 25% !important;
+}
+
+.section-has-5 .box {
+  flex-basis: 20%;
+}
+
+.box-is-f5 {
+  flex-basis: 20% !important;
+}
+
+.section-has-6 .box {
+  flex-basis: 16%;
+}
+
+.box-is-f6 {
+  flex-basis: 16% !important;
+}
+
+.section-has-7 .box {
+  flex-basis: 14%;
+}
+
+.box-is-f7 {
+  flex-basis: 14% !important;
+}
+
+.section-has-8 .box {
+  flex-basis: 12.5%;
+}
+
+.box-is-f8 {
+  flex-basis: 12.5% !important;
+}
+
+.section-has-9 .box {
+  flex-basis: 11.1%;
+}
+
+.box-is-f9 {
+  flex-basis: 11.1% !important;
+}
+
+.section-has-10 .box {
+  flex-basis: 10%;
+}
+
+.box-is-f10 {
+  flex-basis: 10% !important;
+}
+
+.section-has-11 .box {
+  flex-basis: 9%;
+}
+
+.box-is-f11 {
+  flex-basis: 9% !important;
+}
+
+.section-has-12 .box {
+  flex-basis: 8%;
+}
+
+.box-is-f12 {
+  flex-basis: 8% !important;
+}

@@ -1,0 +1,27 @@
+//output: ../main/index.html, pretty: true
+doctype html
+head
+  meta(charset='utf-8')
+  title Builder
+  link(rel='stylesheet' href='styles.css')
+  //- this is a preset font that looks modern and sharp
+  link(rel="stylesheet" media="screen" href="https://fontlibrary.org//face/aileron" type="text/css")
+  meta(name='description' content='test')
+  meta(name='author' content='Bash')
+  
+//script(src='js/scripts.js')
+
+body 
+  section.is-column.is-h-center.section-has-3.box-min-w
+    .box
+      p.text-is-xs.
+        test
+    a(href="").box
+      p.text-is-s.
+        test
+    h1.box test 
+    h2.box.text-is-l test
+    h3.box.text-is-xl test
+    h4.box.text-is-xl1 test
+    h5.box.text-is-xl2 test
+    h6.box.text-is-xl3 test
