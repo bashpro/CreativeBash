@@ -1,0 +1,13 @@
+main
+  index.html
+  styles.css
+
+pug
+  index
+
+sass(file logic)
+  styles
+    layout
+    text
+      text-vars
+    var

@@ -1,0 +1,45 @@
+//main: styles.sass
+/*simple layout logic
+section
+  display: flex
+  width: 100%
+  min-height: 50px
+  flex-wrap: wrap
+
+.is-row
+  flex-direction: column
+
+.is-column
+  flex-direction: row
+
+.is-center
+  justify-content: center
+  align-items: center
+
+.is-v-center
+  justify-content: center
+
+.is-h-center
+  align-items: center
+
+.box
+  flex: 1
+  display: flex
+  min-height: 77px
+
+.box-min-w
+  .box
+    min-width: 300px
+
+$box-size: ('1': 100%,'2': 50%,'3': 33%,'4': 25%,'5': 20%,'6': 16%,'7': 14% ,'8': 12.5%,'9': 11.1% ,'10': 10%,'11': 9% ,'12': 8% )
+
+@each $bs, $per in $box-size
+  .section-has-#{$bs}
+    .box
+      flex-basis: #{$per}
+
+  .box-is-f#{$bs}
+    flex-basis: #{$per}!important
+
+//three systems are needed to be built for this, normal flex, width size version and flex-basis
+//basically need to force sizes
