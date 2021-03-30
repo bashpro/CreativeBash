@@ -6,6 +6,8 @@ section
   min-height: 50px
   flex-wrap: wrap
 
+// is commands
+
 .is-row
   flex-direction: column
 
@@ -22,14 +24,24 @@ section
 .is-h-center
   align-items: center
 
+
+//has commands
+
+.has-no-min-w .box
+  min-width: 0px
+
+.has-min-w
+  .box
+    min-width: 300px
+
+// box methods
+
 .box
   flex: 1
   display: flex
   min-height: 77px
 
-.box-min-w
-  .box
-    min-width: 300px
+
 
 $box-size: ('1': 100%,'2': 50%,'3': 33%,'4': 25%,'5': 20%,'6': 16%,'7': 14% ,'8': 12.5%,'9': 11.1% ,'10': 10%,'11': 9% ,'12': 8% )
 

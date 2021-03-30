@@ -79,14 +79,18 @@ section {
   align-items: center;
 }
 
+.has-no-min-w .box {
+  min-width: 0px;
+}
+
+.has-min-w .box {
+  min-width: 300px;
+}
+
 .box {
   flex: 1;
   display: flex;
   min-height: 77px;
-}
-
-.box-min-w .box {
-  min-width: 300px;
 }
 
 .section-has-1 .box {
