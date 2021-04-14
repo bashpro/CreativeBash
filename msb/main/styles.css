@@ -5,7 +5,7 @@
 /*main preset for core build */
 html {
   overflow-x: hidden;
-  font-family: 'AileronLight', 'arial';
+  font-family: 'AileronThin', 'arial';
   font-weight: 100;
   font-style: normal;
   margin: 0px;
@@ -58,6 +58,10 @@ section {
   flex-wrap: wrap;
 }
 
+.is-flex {
+  display: flex;
+}
+
 .is-row {
   flex-direction: column;
 }
@@ -79,6 +83,14 @@ section {
   align-items: center;
 }
 
+.is-top-right {
+  flex-flow: row-reverse;
+}
+
+.is-bottom-left {
+  flex-flow: column-reverse;
+}
+
 .has-no-min-w .box {
   min-width: 0px;
 }
@@ -90,7 +102,7 @@ section {
 .box {
   flex: 1;
   display: flex;
-  min-height: 77px;
+  min-height: 78px;
 }
 
 .section-has-1 .box {
