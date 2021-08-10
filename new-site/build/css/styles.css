@@ -24,9 +24,6 @@ h1, h2, h3, h4, h5, h6, a, p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.section.no-flex {
-  display: block;
-}
 
 .box {
   -webkit-box-flex: 1;
@@ -39,6 +36,10 @@ h1, h2, h3, h4, h5, h6, a, p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 5px;
+}
+
+.no-flex {
+  display: block;
 }
 
 .row {
