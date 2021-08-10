@@ -1,0 +1,15 @@
+doctype html
+//- these are the pug vars and mixins
+include ./vars
+include ./mixins
+
+html(lang="en")
+  head
+    //- head scripts
+    include ./head  
+    
+  body
+    block content
+    //- script tag
+    script(src="./app.js")
+    //- layout components

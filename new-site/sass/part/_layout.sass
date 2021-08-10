@@ -1,0 +1,18 @@
+//section is normally a full block element
+.section
+  max-width: 100%
+  @include flex
+  //no flex is mainly for elements that have different sizes
+  &.no-flex
+    display: block
+
+.box
+  flex: 1
+  @include flex
+  margin: 5px
+
+.row
+  flex-direction: column
+
+.column
+  flex-direction: row
