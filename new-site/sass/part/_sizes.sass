@@ -1,0 +1,22 @@
+// for rule
+
+@for $i from 1 through 6
+  .w-h-#{$size * $i}
+    width: calc(#{$spx} * #{$i})
+    height: calc(#{$spx} * #{$i})
+
+@for $i from 7 through 10
+  .w-h-#{$size * $i}
+    min-width: $min
+    width: 100%
+    max-width: calc(#{$spx} * #{$i})
+    height: calc(#{$spx} * #{$i})
+
+
+@for $i from 7 through 10
+  @media  only screen and (max-width: #{$size * $i} + px )
+    .w-h-#{$size * $i}
+      min-width: $min
+      width: 100%
+      max-width: calc(#{$spx} * #{$i})
+      height: 300px

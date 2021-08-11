@@ -7,13 +7,30 @@
   flex: 1
   @include flex
   margin: 5px
+  transition: all 0.3s ease
+
 
 //no flex is mainly for elements that have different sizes
 .no-flex
   display: block
+  flex: unset
+  min-width: auto
+
+.no-margin
+  margin: 0px
 
 .row
   flex-direction: column
 
 .column
   flex-direction: row
+
+.v-center
+  align-items: center
+
+.h-center
+  justify-content: center
+
+.v-h-center
+  align-items: center
+  justify-content: center

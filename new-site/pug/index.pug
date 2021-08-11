@@ -1,15 +1,11 @@
 extend ./components/template
 //- this will be added to the 
-block content
+block content 
   
-  //- working with or without layout, can be found in vars
-  
-  if layout == "yes" 
-    //layout dev view
-    include ./components/layout
+  - 
+    //- layout options: "main", "layout", "sizes"
+    var layout = "sizes"
+    var test = ""
     
-  else
-    
-    //add content to main
-    include ./components/main
-    
+  //- if conditions 
+  include ./components/if 
