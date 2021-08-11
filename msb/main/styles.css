@@ -3,6 +3,10 @@
   Author: Bash
   version: 0.0.1 */
 /*main preset for core build */
+.hide {
+  display: none;
+}
+
 html {
   overflow-x: hidden;
   font-family: 'AileronThin', 'arial';
@@ -20,6 +24,29 @@ body, p, a, h1, h2, h3, h4, h5, h6 {
   user-select: none;
   width: auto;
   cursor: default;
+  letter-spacing: 0.5px;
+}
+
+textarea {
+  padding: 5px !important;
+  border: 1px solid gray !important;
+  border-top: 0px !important;
+  border-left: 0px !important;
+  resize: none;
+  height: 200px;
+  font-size: 16px !important;
+  font-weight: normal !important;
+  font-family: "AileronThin", "arial" !important;
+  letter-spacing: 0.5px !important;
+}
+
+textarea:focus {
+  outline: 0px !important;
+}
+
+.code-area {
+  border-top: 1px solid gray !important;
+  border-left: 1px solid gray !important;
 }
 
 .text-is-xs {
@@ -60,6 +87,7 @@ section {
 
 .is-flex {
   display: flex;
+  flex-grow: 1;
 }
 
 .is-row {
@@ -95,6 +123,10 @@ section {
   min-width: 0px;
 }
 
+.has-min-w {
+  min-width: 300px;
+}
+
 .has-min-w .box {
   min-width: 300px;
 }
@@ -103,6 +135,7 @@ section {
   flex: 1;
   display: flex;
   min-height: 78px;
+  flex-wrap: wrap;
 }
 
 .section-has-1 .box {
@@ -145,58 +178,92 @@ section {
   flex-basis: 20% !important;
 }
 
-.section-has-6 .box {
-  flex-basis: 16%;
+.is-h50 {
+  height: 50px;
 }
 
-.box-is-f6 {
-  flex-basis: 16% !important;
+.is-w50 {
+  flex-basis: 50px;
+  flex-grow: 0;
 }
 
-.section-has-7 .box {
-  flex-basis: 14%;
+.is-h100 {
+  height: 100px;
 }
 
-.box-is-f7 {
-  flex-basis: 14% !important;
+.is-w100 {
+  flex-basis: 100px;
+  flex-grow: 0;
 }
 
-.section-has-8 .box {
-  flex-basis: 12.5%;
+.is-h150 {
+  height: 150px;
 }
 
-.box-is-f8 {
-  flex-basis: 12.5% !important;
+.is-w150 {
+  flex-basis: 150px;
+  flex-grow: 0;
 }
 
-.section-has-9 .box {
-  flex-basis: 11.1%;
+.is-h200 {
+  height: 200px;
 }
 
-.box-is-f9 {
-  flex-basis: 11.1% !important;
+.is-w200 {
+  flex-basis: 200px;
+  flex-grow: 0;
 }
 
-.section-has-10 .box {
-  flex-basis: 10%;
+.is-h250 {
+  height: 250px;
 }
 
-.box-is-f10 {
-  flex-basis: 10% !important;
+.is-w250 {
+  flex-basis: 250px;
+  flex-grow: 0;
 }
 
-.section-has-11 .box {
-  flex-basis: 9%;
+.is-h300 {
+  height: 300px;
 }
 
-.box-is-f11 {
-  flex-basis: 9% !important;
+.is-w300 {
+  flex-basis: 300px;
+  flex-grow: 0;
 }
 
-.section-has-12 .box {
-  flex-basis: 8%;
+.is-h350 {
+  height: 350px;
 }
 
-.box-is-f12 {
-  flex-basis: 8% !important;
+.is-w350 {
+  flex-basis: 350px;
+  flex-grow: 0;
+}
+
+.is-h400 {
+  height: 400px;
+}
+
+.is-w400 {
+  flex-basis: 400px;
+  flex-grow: 0;
+}
+
+.is-h450 {
+  height: 450px;
+}
+
+.is-w450 {
+  flex-basis: 450px;
+  flex-grow: 0;
+}
+
+.is-h500 {
+  height: 500px;
+}
+
+.is-w500 {
+  flex-basis: 500px;
+  flex-grow: 0;
 }

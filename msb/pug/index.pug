@@ -6,13 +6,15 @@ head
   link(rel='stylesheet' href='styles.css')
   //- this is a preset font that looks modern and sharp
   link(rel="stylesheet" media="screen" href="https://fontlibrary.org//face/aileron" type="text/css")
+  script(src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous")
+  script(src="script.js")
   meta(name='description' content='test')
   meta(name='author' content='Bash')
   
 //script(src='js/scripts.js')
 
 body 
-  section.is-column.is-h-center.section-has-4.has-min-w
+  section.is-column.is-h-center.section-has-4.has-min-w.hide
     .box.box-is-f1.has-no-min-w
       p.text-is-xs.
         test
@@ -32,3 +34,19 @@ body
       h5.text-is-xl2 test
     .box
       h6.text-is-xl3 test 
+  
+  section.is-column.hide
+    .box.is-row.has-min-w
+      .is-flex.is-h300
+        p.text-is-l.
+          Test
+      .is-flex.is-h100
+        p.text-is-l.
+          Test
+    .box.has-min-w.is-column
+      .box
+        p.text-is-l.
+          Test
+      .box
+        p.text-is-l.
+          Test

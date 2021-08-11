@@ -4,12 +4,14 @@
   <title>Builder</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/aileron" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
   <meta name="description" content="test">
   <meta name="author" content="Bash">
 </head>
 <!--script(src='js/scripts.js')-->
 <body> 
-  <section class="is-column is-h-center section-has-4 has-min-w">
+  <section class="is-column is-h-center section-has-4 has-min-w hide">
     <div class="box box-is-f1 has-no-min-w">
       <p class="text-is-xs">test</p>
     </div><a href="" class="box box-is-f2">
@@ -31,6 +33,24 @@
     </div>
     <div class="box">
       <h6 class="text-is-xl3">test </h6>
+    </div>
+  </section>
+  <section class="is-column hide">
+    <div class="box is-row has-min-w">
+      <div class="is-flex is-h300">
+        <p class="text-is-l">Test</p>
+      </div>
+      <div class="is-flex is-h100">
+        <p class="text-is-l">Test</p>
+      </div>
+    </div>
+    <div class="box has-min-w is-column">
+      <div class="box">
+        <p class="text-is-l">Test</p>
+      </div>
+      <div class="box">
+        <p class="text-is-l">Test</p>
+      </div>
     </div>
   </section>
 </body>

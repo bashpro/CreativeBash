@@ -9,6 +9,7 @@ section
 // is commands
 .is-flex
   display: flex
+  flex-grow: 1
 
 .is-row
   flex-direction: column
@@ -38,6 +39,7 @@ section
   min-width: 0px
 
 .has-min-w
+  min-width: 300px
   .box
     min-width: 300px
 
@@ -47,18 +49,28 @@ section
   flex: 1
   display: flex
   min-height: 78px
+  flex-wrap: wrap
 
 
 
-$box-size: ('1': 100%,'2': 50%,'3': 33%,'4': 25%,'5': 20%,'6': 16%,'7': 14% ,'8': 12.5%,'9': 11.1% ,'10': 10%,'11': 9% ,'12': 8% )
+$box-size: ('1': 100,'2': 50,'3': 33,'4': 25,'5': 20)
 
 @each $bs, $per in $box-size
   .section-has-#{$bs}
     .box
-      flex-basis: #{$per}
+      flex-basis: #{$per+'%'}
 
   .box-is-f#{$bs}
-    flex-basis: #{$per}!important
+    flex-basis: #{$per+'%'}!important
 
 //three systems are needed to be built for this, normal flex, width size version and flex-basis
 //basically need to force sizes
+
+$sizes: ('50', '100', '150', '200', '250', '300', '350', '400', '450', '500' )
+@each $i in $sizes
+  .is-h#{$i}
+    height: #{$i+px}
+
+  .is-w#{$i}
+    flex-basis: #{$i+px}
+    flex-grow: 0
