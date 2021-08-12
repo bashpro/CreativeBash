@@ -15,10 +15,18 @@ block content
       }
     }
     
-    
     var layout = "layout"
     var test = "" 
 
+  script.
+    console.log("#{website.title}");
+    
+    $(document).ready(function(){
+      console.log("#{website.test}");
+    });
+    
+    var test = `#{website.test} test`; 
 
+  
   //- if conditions 
-  include ./components/if 
+  include ./components/if
