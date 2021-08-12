@@ -16,10 +16,18 @@ else if layout == "main"
   //Main content
   include main
 
-
+if website.object.testing == website.test
+  .section
+    .box
+      p WELCOME TO FRESH MANGO
+      p #{website.array.key[0]}
   
 
 
 if website.title !== ""
-  p testing this because im curious
-  p #{website.title}
+  .section
+    .box
+      p testing this because im curious
+      
+    .box
+      p #{website.title}
