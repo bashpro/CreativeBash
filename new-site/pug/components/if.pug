@@ -5,6 +5,8 @@
 if layout == "layout" 
   //layout dev view
   include layout 
+  if website.title == ""
+    p does your website have a name?
 
 else if layout == "sizes"
   //testing sizing
@@ -13,4 +15,11 @@ else if layout == "sizes"
 else if layout == "main"
   //Main content
   include main
+
+
   
+
+
+if website.title !== ""
+  p testing this because im curious
+  p #{website.title}
