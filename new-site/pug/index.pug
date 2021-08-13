@@ -1,32 +1,18 @@
 extend ./components/template
-//- this will be added to the 
-block content 
-  
-  - 
-    //- layout options: "main", "layout", "sizes"
-    var website = {
-      title: "Creativebash",
-      test: "this actually works",
-      object: {
-        testing: "this actually works"
-      },
-      array: {
-        key: [1,2,3]
-      }
-    }
-    
-    var layout = "layout"
-    var test = "" 
 
-  script.
-    console.log("#{website.title}");
-    
-    $(document).ready(function(){
-      console.log("#{website.test}");
-    });
-    
-    var test = `#{website.test} test`; 
+//- the setup of files that are all placed in one place to update when anything changes
 
-  
+block pug
+  //- Pug components
+  include ./components/vars
+  include ./components/mixins
   //- if conditions 
   include ./components/if
+
+block head
+  include ./components/head 
+
+block content
+  include ./content/content
+    
+  

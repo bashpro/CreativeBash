@@ -1,5 +1,5 @@
 //- title of the page
-title CreativeBash
+title #{website.title}
 //- meta tags for the website
 meta(charset="utf-8")
 meta(content="width=device-width, initial-scale=1" name="viewport")
@@ -10,4 +10,10 @@ link(rel="stylesheet" href="./css/styles.css")
 //- fontlibrary
 link(rel="stylesheet" media="screen" href="https://fontlibrary.org//face/aileron" type="text/css")
 //- jquery script
-script(src='https://code.jquery.com/jquery-3.6.0.min.js' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' crossorigin='anonymous')
+if jquery == "true"
+  script(src='https://code.jquery.com/jquery-3.6.0.min.js' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' crossorigin='anonymous')
+else
+  if website.comments == "yes"
+    //Jquery is not installed and functions will not be defined
+  
+    

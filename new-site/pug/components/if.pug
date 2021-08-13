@@ -14,7 +14,10 @@ else if layout == "sizes"
   
 else if layout == "main"
   //Main content
-  include main
+  include ../content/main
+
+if website.plugins.jquery == "yes"
+  - var jquery = "true"
 
 if website.object.testing == website.test
   .section
