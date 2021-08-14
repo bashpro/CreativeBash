@@ -1,36 +1,51 @@
 //- If statements
 
-//- which layout/components are we working on?
+//- fileChange and layout 
 
-if layout == "layout" 
-  //layout dev view
-  include layout 
-  if website.title == ""
-    p does your website have a name?
-
-else if layout == "sizes"
-  //testing sizing
-  include sizes
+if website.fileChange == "yes"
+  - var fCerr = true
+    
+    
+else if website.devMode == ""
+  - var main = true
   
-else if layout == "main"
-  //Main content
-  include ../content/main
+  
+//- devMode
+
+if website.devMode == "yes"
+  - var dev = true
+  unless website.fileChange == ""
+    - var fileChange = "this is a development view"
+  
+  if website.layout == "layout"
+    - var lerr = true
+    - var dev = fales
+    
+    if lerr && fCerr 
+      - var err1 = true
+    
+    else
+      //layout dev view
+      - var layout = true 
+  
+    
+    if website.title == ""
+      p does your website have a name?
+      
+  else if website.layout == "sizes"
+    //testing sizing
+    - var sizes = true
+      
+  else
+    
+    
+else if website.layout !== ""
+  - var err2 = true
+  - var main = false
+  
+
+
+//- which layout/components are we working on?
 
 if website.plugins.jquery == "yes"
   - var jquery = "true"
-
-if website.object.testing == website.test
-  .section
-    .box
-      p WELCOME TO FRESH MANGO
-      p #{website.array.key[0]}
-  
-
-
-if website.title !== ""
-  .section
-    .box
-      p testing this because im curious
-      
-    .box
-      p #{website.title}

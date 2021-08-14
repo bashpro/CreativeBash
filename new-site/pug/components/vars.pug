@@ -1,16 +1,34 @@
 -
   var website = {
+    //- The title of the website
     title: "Creativebash",
-    test: "this actually works",
-    object: {
-      testing: "this actually works"
-    },
-    array: {
-      key: [1,2,3]
-    },
-    plugins: {
-      jquery: "yes",
+    
+    //- Change the file you're working on
+    fileChange: "",
+    
+    //- Development mode options: "", "yes"
+    //- "" (default) live website will be shown
+    //- "yes" Will 
+    devMode: "yes",
       
-    }, 
-    comments: ""
+    //- Components which can be viewed and edited through the sass files.
+    //-  These components will display if assigned if the main page is selected
+    //-  "layout" is flexbox system in the css for responsive design plus font formatting.
+    //-  "sizes" is the sizes for the components in the css library.
+    layout: "layout",
+    
+    
+    plugins: {
+      jquery: "",
+      
+    },
+    
+    comments: "",
   }
+  
+  //- change the file name to the document you're working on
+  //- example ../content/"main"
+  
+ 
+
+  

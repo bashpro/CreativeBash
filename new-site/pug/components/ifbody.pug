@@ -1,0 +1,17 @@
+if dev
+  //In devMode
+  p Are you editing components? select a layout.
+  p or
+  p You have devMode on, which is stopping you see your page, disable devMode
+
+if main
+  include ../content/main
+
+if content
+  include ../content/content
+  
+if layout
+  include ./layout
+  
+if sizes
+  include ./sizes
