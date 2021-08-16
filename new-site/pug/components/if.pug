@@ -1,18 +1,25 @@
 //- If statements
 
+//- vars
+-
+  var devMode = website.devMode
+  var jquery = website.plugins.jquery
+  var bootstrap = website.plugins.bootstrap
+  var comments = website.comments
+
 //- fileChange and layout 
 
 if website.fileChange == "yes"
   - var fCerr = true
     
     
-else if website.devMode == ""
+else if devMode == ""
   - var main = true
   
   
 //- devMode
 
-if website.devMode == "yes"
+if devMode 
   - var dev = true
   unless website.fileChange == ""
     - var fileChange = "this is a development view"
@@ -47,6 +54,3 @@ else if website.layout !== ""
 
 
 //- which layout/components are we working on?
-
-if website.plugins.jquery == "yes"
-  - var jquery = "true"

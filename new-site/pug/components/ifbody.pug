@@ -5,13 +5,21 @@ if dev
   p You have devMode on, which is stopping you see your page, disable devMode
 
 if main
+  if comments  
+    // main.pug 
   include ../content/main
 
 if content
+  if comments  
+    // content.pug 
   include ../content/content
   
 if layout
+  if comments  
+    // layout section
   include ./layout
   
 if sizes
+  if comments  
+    // sizes section
   include ./sizes

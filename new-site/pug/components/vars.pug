@@ -1,14 +1,14 @@
 -
   var website = {
     //- The title of the website
-    title: "Creativebash",
+    title: "Creativebash", 
     
     //- Change the file you're working on
     fileChange: "",
     
     //- Development mode options: "", "yes"
     //- "" (default) live website will be shown
-    //- "yes" Will 
+    //- true Will 
     devMode: "",
       
     //- Components which can be viewed and edited through the sass files.
@@ -19,10 +19,15 @@
     
     
     plugins: {
-      jquery: "yes",
+      jquery: true,
+      //- if bootstrap is true, the main css library will not function
+      bootstrap: "",
+      
       
     },
     
+    //- Dev comments options, mainly to have comments of whats been installed
+    //- options : "", true
     comments: "",
   }
   
