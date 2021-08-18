@@ -1,0 +1,21 @@
+{
+  "name": "new-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eleventy-plugin-sass": "^1.2.0",
+    "pug": "^3.0.2",
+    "sass": "^1.38.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
+}
