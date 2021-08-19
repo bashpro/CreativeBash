@@ -1,0 +1,19 @@
+extend ../_includes/template
+
+block uservars
+  -
+    website.title = "blog"
+    //-website.comments = true
+    
+    //-plugins.jquery = ""
+    
+    //- blog data
+    
+    
+
+block content
+  
+  p This is a blog page
+  
+  each i in blog
+    +blogs(i)

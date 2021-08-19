@@ -4,3 +4,20 @@ mixin section(i)
       block
     else
       p testing
+
+mixin blogs(i)
+  -
+    var i = {
+      "link": "../blog/" + i.link,
+      "title": i.title,
+      "subT": i.subT,
+      "smallText": i.smallText
+    }
+  
+  a(href= i.link)
+    h1= i.title
+  h4= i.subT
+  p= i.smallText
+    
+//-mixin blogPost(i)
+  

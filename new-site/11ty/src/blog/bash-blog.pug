@@ -1,0 +1,15 @@
+extend ../_includes/template
+
+block uservars
+  -
+    website.title = "Bash's Blog"
+    
+  
+
+block content
+  
+  h1= bashBlog.title
+  h4= bashBlog.subT
+  p= bashBlog.paragraph
+  p Despite this being an ok solution it would of been wonderful to be able to have each blog in its own place
+  p= bashBlog.content.item
