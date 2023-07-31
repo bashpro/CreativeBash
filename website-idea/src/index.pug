@@ -1,0 +1,87 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+    link(rel="stylesheet", href="style.css")
+    script(src='https://cdn.tailwindcss.com')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css', integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==', crossorigin='anonymous', referrerpolicy='no-referrer')
+  
+  body 
+    include ./mixins.pug
+
+    #content-holder(class="flex flex-roow w-screen h-screen select-none")
+
+      #nav(class="z-30 fixed w-[50px] h-full bg-zinc-100 flex flex-col overflow-hidden min-w-[50px] transition-all duration-[250ms] relative max-[500px]:left-[-60px] left-[0px] max-[500px]:w-[0px] max-[500px]:min-w-[0px]")
+        #n-top(class="z-30 flex-row flex")
+          +btn({icon: "house", name: "Home", widthSize:"160px"})
+          +btn({name:"bars", icon:"bars", btnID:"nt-btn", widthSize: "50px", extraClasses:"hidden flex-1 justify-end"})
+          
+        #n-middle(class=" z-30 flex justify-center flex-1 flex-col")
+          +btn({icon: "user-ninja", name: "Our Approach"})
+          +btn({icon: "user-group fa-xs", name: "About Us"})
+          +btn({icon: "calendar-days", name: "Time Table"})
+          +btn({icon: "book", name: "Book Online"})
+          +btn({icon: "envelope", name: "Contact Us"})
+          
+        #n-bottom(class="flex justify-center flex-col")
+          +btn({icon: "square-facebook fa-brands", name: "Facebook"})
+        
+      #main-content(class="z-[10] flex flex-col w-full h-auto bg-zinc-50 flex-col overflow-hidden overflow-y-auto")
+        #mc-top(class=" z-[20] h-[50px] min-w-[calc(100%)] flex flex-col fixed transition-all duration-200 bg-gradient-to-b from-[rgba(0,0,0,0.4)] to-zinc-[rgba(0,0,0,0)]")
+          #mct-left(class="flex")
+            #mctl-navbar(class="w-50px")
+              +btn({name:"bars", icon:"bars", btnID:"mctl-btn", widthSize:"50px", colour: "zinc-400", colourHover: "zinc-100"})
+            
+            #mctl-login(class="fixed right-[0px] top-[0px]")
+              +btn({icon: "user", name: "Log In", widthSize:"115px", colour: "zinc-400", colourHover: "zinc-100"})
+        
+        #mc-bottom(class="flex h-auto w-full flex-col ")
+          
+          #hero(class="relative w-full h-screen")
+            video(class="absolute inset-0 w-full h-full object-cover filter brightness-[0.35]" autoplay loop muted)
+              source(src="./mma.mp4" type="video/mp4")
+            
+
+            #hero-text(class="z-10 absolute top-0 left-0 w-full h-full flex items-center justify-center flex-col")
+              #hero-logo(class="flex justify-center min-w-[240px] w-[28%]")
+                img(src="./YMAA_logo.png" class="object-cover min-w-[100px] filter brightness-[0.9] invert-[1] grayscale-[1]" alt="logo")
+              
+              p(class="text-white sm:text-6xl font-thin mb-[10px] text-center text-4xl") Welcome to Yarm Martial Arts
+              p(class="text-white sm:text-3xl font-thin text-center text-xl") Opening the Doors to Your Future
+              p(class="text-white sm:text-xl font-thin text-center text-lg") Established Since 2001
+
+              #arrow-down(class="flex w-[100px] h-[50px]")
+
+              // Add more <p> tags here for additional text
+            //-iframe( class="w-full h-screen" src='https://www.youtube.com/embed/C3FhW2kbcuY' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen='')
+            
+          .section(class="h-auto bg-zinc-500")
+            #form(class=" ml-[15px] mr-[15px]")
+              p(class="text-white sm:text-4xl font-thin mt-[30px] mb-[20px] text-center text-2xl w-full") Unclock your full potential
+              p(class="text-white sm:text-xl font-thin text-center text-lg")  Book your free introductory Session Today
+              p(class="text-white sm:text-xl font-thin text-center text-lg mb-[20px]")  Simply Call us or Book Your No Obligation Session And Get To Know Us
+
+              #formInputs(class="flex flex-wrap min-w-[300px] max-w-[640px] justify-center w-full ml-auto mr-auto mb-[30px] ")
+                input(placeholder="Forename" class="min-w-[300px] p-[5px] m-[10px] max-w-[310px]")
+                input(placeholder="Surname" class="min-w-[300px] p-[5px] m-[10px] max-w-[310px]")
+                input(placeholder="Phone" class="min-w-[300px] p-[5px] m-[10px] max-w-[310px]")
+                input(placeholder="Email" class="min-w-[300px] p-[5px] m-[10px] max-w-[310px]")
+              
+              #agreementForm(class="flex flex-wrap min-w-[300px] max-w-[740px] justify-center w-full ml-auto mr-auto mb-[30px]")
+                #agreement(class="mb-[20px] flex")
+                  input(type="checkbox", name="" class="mr-[5px]")
+                  p(class="text-white sm:text-lg font-thin text-center text-sm") By clicking the submit button you agree to our Terms & Conditions and Privacy Policy.
+
+                p(class="mb-[30px] bg-zinc-700 hover:bg-zinc-900 text-white font-bold py-2 px-4 rounded transition-all duration-200") Book Now
+          
+          .section(class="h-auto ")
+            #ages-cards(class="ml-[15px] mr-[15px] flex flex-wrap min-w-[320px] max-w-[100%] justify-center w-full ml-auto mr-auto")
+              +card({title: 'Ages 5-7', class: 'Ninja Tots', desc: 'fun and excitement of Choi Kwang Do'})
+              +card({title: 'Ages 7+', class: 'Karate Kids', desc: 'The journey to Black Belt starts here!!'})
+              +card({title: 'Adults', class: 'Adult Fighter', desc: 'confidence to improve themselves mentally and physically.'})
+            
+    
+    script(src="./script.js") 
+      
