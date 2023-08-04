@@ -40,8 +40,8 @@ html(lang="en")
         #mc-bottom(class="flex h-auto w-full flex-col ")
           
           #hero(class="relative w-full h-screen")
-            video(class="absolute inset-0 w-full h-full object-cover filter brightness-[0.35]" autoplay loop muted)
-              source(src="./mma.mp4" type="video/mp4")
+            video(class="absolute inset-0 w-full h-full object-cover filter brightness-[0.35]" src="./mma.mp4" autoplay loop muted playsinline)
+              //source(src="./mma.mp4" type="video/mp4")
             
 
             #hero-text(class="z-10 absolute top-0 left-0 w-full h-full flex items-center justify-center flex-col")
@@ -53,6 +53,7 @@ html(lang="en")
               p(class="text-white sm:text-xl font-thin text-center text-lg") Established Since 2001
 
               #arrow-down(class="flex w-[100px] h-[50px]")
+              
 
               // Add more <p> tags here for additional text
             //-iframe( class="w-full h-screen" src='https://www.youtube.com/embed/C3FhW2kbcuY' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen='')
@@ -81,6 +82,8 @@ html(lang="en")
               +card({title: 'Ages 5-7', class: 'Ninja Tots', desc: 'Fun and excitement of Choi Kwang Do', img: 'ninja-tots'})
               +card({title: 'Ages 7+', class: 'Karate Kids', desc: 'The journey to Black Belt starts here!!', img: 'karate-kids'})
               +card({title: 'Adults', class: 'Adult Fighter', desc: 'Confidence to improve themselves mentally and physically.', img: 'adults'})
+          
+          .section(class="h-auto ")
             
     
     script(src="./script.js") 
